@@ -75,7 +75,7 @@ wachtwoord : 123456
 
 edit db.class.php en session.class.php voor de database connectie
 
-#Database opbouw
+# Database opbouw
 
 ## gebruikers
 | id |   naam 	 | wachtwoord | rechten |groep|
