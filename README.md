@@ -69,8 +69,11 @@ Basis Systeem van mijn Bare Metal CMS Systeem
 
 execute de SQL script en je kan beginnen 
 
+## basis info
 gebruiker : admin 
 wachtwoord : 123456
+
+edit db.class.php en session.class.php voor de database connectie
 
 #Database opbouw
 
