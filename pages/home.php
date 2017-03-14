@@ -6,7 +6,6 @@ if (!Permission::rank('user')){
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
 <script src="//<?php echo $_SERVER['SERVER_NAME']?>/template/boot/js/login.js"></script>
 <!-- login -->
-<div class='alert'>Herschrijving naar classes en PDO</div>
 	<div class="signin-form">
  <div class="container">
      
