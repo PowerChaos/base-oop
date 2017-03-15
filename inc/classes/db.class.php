@@ -7,7 +7,7 @@ class db extends PDO {
     private $errorCallbackFunction;
     private $errorMsgFormat;
 
-    public function __construct($dsn='mysql:host=localhost;dbname=<DATABASE NAME>, $user="<DATABASE USER>", $passwd="<DATABASE PASSWORD>", $options=array()) {
+    public function __construct($dsn='mysql:host=localhost;dbname=<DATABASE NAME>', $user="<DATABASE USER>", $passwd="<DATABASE PASSWORD>", $options=array()) {
 /* Hard coded sql connectie voor database
 *  Gebruik $db = new db ( connectie,gebruiker, wachtwoord ) voor andere database connectie
 */       
