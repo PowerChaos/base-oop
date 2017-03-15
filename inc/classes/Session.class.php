@@ -256,7 +256,7 @@ class Session
        // Delete session
        try
          {
-         $stmt = $this->dbc->prepare( "DELETE FROM user_sessions WHERE id = :id" );
+         $stmt = $this->dbc->prepare( "DELETE FROM " . $this->table . " WHERE id = :id" );
          $stmt->execute( array( ':id' => $id ) );
          }
 
