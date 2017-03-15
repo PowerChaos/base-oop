@@ -1,0 +1,15 @@
+RewriteEngine On
+# /* force redirect to https */
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{SERVER_NAME}/$1 [R,L]
+# /* End Force HTTPS */
+Options +FollowSymLinks
+Options -Indexes
+RewriteRule ^logout$ index.php?perm=logout
+RewriteRule ^a/([a-zA-Z0-9_-]+)$ index.php?perm=admin&file=$1
+RewriteRule ^s/([a-zA-Z0-9_-]+)$ index.php?perm=staff&file=$1
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?file=$1
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . / [L,R=302]
+# /* CopyRight PowerChaos 2016 */
